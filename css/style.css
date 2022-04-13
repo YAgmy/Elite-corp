@@ -1,0 +1,363 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+:root {
+    --red-color:#ec1c23;
+    --blue-color:#08526d;
+}
+ul {
+    margin: 0;
+}
+/* Upper bar */
+.upperbar {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+/* Navbar */
+.navbar-brand span:first-child {
+    color :var(--blue-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+.navbar-brand span:last-child {
+    color :var(--red-color);
+}
+.navbar-nav .nav-link {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: var(--blue-color) !important;
+}
+.navbar-light .navbar-nav .active .nav-link {
+    color: var(--red-color) !important;
+}
+
+
+
+/* Start Slider */
+.slider .carousel-item{
+    background-size: cover;
+}
+.slider .carousel-one {
+    background-image: url('../imgs/image.png');
+}
+.slider .carousel-three {
+    background-image: url('../imgs/background1.png');
+}
+.slider .carousel-two {
+    background-image: url('../imgs/background2.png');
+}
+.slider .carousel-four {
+    background-image: url('../imgs/background3.png');
+}
+.slider .carousel-inner h1 {
+    font-size: 35px;
+    line-height: 2;
+}
+.slider .carousel-inner span {
+    background-color: var(--red-color);
+    padding: 5px;
+}
+.slider .carousel-inndecators {
+    height:8px
+}
+
+/* Features */
+
+.features {
+    padding: 50px 0;
+}
+.features svg {
+    color: white;
+    background-color: var(--red-color);
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.features h3 {
+    padding-top: 10px;
+    color: var(--blue-color);
+    font-size: 23px
+}
+.features p {
+    margin-bottom:50px;
+}
+
+
+/* Start overview */
+
+.overview {
+    background-color: #f0f5f7;
+    padding: 100px 0;
+}
+.overview h2 {
+    font-weight: bold;
+}
+.overview p {
+    width: 86%;
+    margin: 0 auto;
+    line-height: 2;
+    font-size:20px;
+}
+.overview h3 {
+    font-size: 20px;
+}
+
+/* featured-work */
+
+.featured-work {
+    padding: 100 0;
+}
+.featured-work h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.featured-work p {
+    width: 86%;
+    margin: 0 auto;
+    line-height: 2;
+    font-size:20px;
+}
+.featured-work ul {
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+}
+.featured-work ul li {
+    border: 2px solid var(--blue-color);
+    padding: 6px 10px; 
+    background-color: white;
+    color: var(--blue-color);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 0 10px 10px;
+    transition: all 0.3s;
+}
+@media (min-width: 768px) {
+    .featured-work ul li.logo {
+    font-size: 11px;
+    padding: 10px;
+    }
+}
+@media (min-width: 1024px) {
+    .featured-work ul li.logo {
+    font-size: 17px;
+    padding: 6px
+    }
+}
+.featured-work ul li.active,
+.featured-work ul li:hover {
+    background-color: var(--red-color);
+    color: white;
+    border-style: none;
+}
+.featured-work img {
+    width: 100%;
+}
+.featured-work .row img {
+    width: 100%;
+}
+
+
+/* Last Post*/
+.last-post {
+    padding: 100px 0;
+    background-color: #f0f5f7;
+}
+.last-post h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.last-post .card .card-title {
+    color: var(--blue-color);
+    font-size: 20px;
+}
+.last-post .card .card-text {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+.last-post .card a {
+    text-decoration: none;
+    color: var(--red-color);
+    font-size:16px
+} 
+.last-post .card-body {
+    padding: 8px;
+}
+
+
+/*TEstimonials*/
+.testimoials{
+    margin: 100px 0;
+    background-color: #f0f5f7;
+    background-size: cover;
+    background-image: url('../imgs/testimonial-bg.png');
+}
+
+
+/* Pricing */
+
+.pricing {
+    background-color: #f0f5f7;
+}
+.pricing .card {
+    box-shadow:1px 1px 12px -6px;
+    padding: 20px 0;
+}
+.pricing .card h4 {
+    color: var(--blue-color);
+    font-size:24px;
+}
+.pricing p.card-text{
+    background-color: #f0f5f7;
+    display: block;
+    color: var(--blue-color);
+    font-size: 40px;
+    font-weight: bold;
+}
+.pricing .two p.card-text {
+    background-color: var(--red-color);
+    color: white;
+}
+.pricing p.card-text span {
+    font-size: 16px;
+}
+.pricing .card li {
+    margin-bottom:20px;
+}
+.pricing a,
+.pricing .two a {
+    background-color: var(--red-color);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.pricing .two a {
+    background-color: var(--blue-color);
+}
+.pricing .two {
+    top:-10px
+}
+
+/* Chose us */
+.chose-us {
+    margin: 100px 0;
+}
+.chose-us img {
+    max-width: 100%;
+}
+.chose-us .two  {
+    background-color: var(--blue-color);
+    color: white;
+    padding: 50px 0 20px 20px;
+    font-size: 16px;
+}
+.chose-us .two h2 {
+    margin-bottom:30px;
+    font-size: 42px;
+    font-weight: bold;
+}
+.chose-us .two a {
+    background-color: var(--red-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Stats */
+
+.stats {
+    background-color: #f0f5f7;
+    padding: 100px 0;
+    color: var(--blue-color);
+}
+.stats span {
+    font-size: 40px;
+    font-weight: bold;
+}
+.stats p {
+    color: var(--red-color);
+}
+
+/* contact-us */
+.contact-us {
+    background-color: var(--red-color);
+    color: white;
+    padding: 50px 0;
+}
+.contact-us p {
+    font-size: 25px;
+    margin: 0;
+}
+.contact-us a {
+    padding: 4px 15px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+    background-color: #f0f5f7;
+    padding: 100px 0;
+}
+.footer .site-info span:first-child {
+    color: var(--blue-color);
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+.footer .site-info span {
+    color: var(--red-color);
+}
+.footer .site-info p {
+    font-size: 18px;
+}
+.footer .site-info a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--blue-color);
+}
+.footer .helpful-links h2,
+.footer .contact h2 {
+    color: var(--blue-color);
+    margin-bottom: 35px;
+}
+.footer .helpful-links ul li svg {
+    color: #9e9e9e;
+}
+.footer .helpful-links ul li {
+    margin-bottom: 20px;
+    color: var(--blue-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer .contact p {
+    margin-bottom:20px;
+    color: #9e9e9e;
+}
+.footer .contact p>span {
+    color: var(--blue-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer section */
+.copyright {
+    border-top: 1px solid #333;
+    padding: 20px;
+}
+.copyright ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color:#777
+}
